@@ -33,6 +33,7 @@ DeviceLogonEvents
 | extend TimeWindow = "10d"
 | project RemoteIP, DeviceName, FailedAttempts, TimeWindow
 | order by FailedAttempts
+```
 
 ## 🧠 Rule Configuration Highlights
 
@@ -86,6 +87,7 @@ DeviceLogonEvents
 | extend TimeWindow = "10d"
 | project RemoteIP, DeviceName, SuccessfulAttempts, TimeWindow
 | order by SuccessfulAttempts desc
+```
 
 ## 🛡️ 3. Containment, Eradication, and Recovery
 
@@ -143,4 +145,4 @@ Screenshots captured from:
 
 > **Incident Resolved and Closed**  
 > **Classification:** ✅ `True Positive – Suspicious Activity`
-
+```
